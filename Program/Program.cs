@@ -10,3 +10,18 @@ int ReadData(string line)
     return array;
 }
 
+//Метод проверяет длину элемента массива и если она меньше или ровна 3, то записывает элемент в новый массив
+void ShortArray(string[] array, string[] newArray)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+    if(array[i].Length <= 3)
+        {
+        newArray[count] = array[i];
+        count++;
+        }
+    }
+}
+
+
